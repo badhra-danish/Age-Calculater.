@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{     
+            margin: auto;
+            width: 35%;
+            border: .2rem solid rgb(216, 143, 143);
+            border-radius: 1rem;
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            color:  rgb(217, 106, 106);;
+        }
+        form{
+            height: auto;
+            margin: 2rem 2rem;
+            outline: none;
+        }
+        p{
+            font-size: 1.2rem;
+            margin: .6rem 0;
+            color:  rgb(185, 82, 82);;
+        }
+        input{
+            width: 95%;
+            padding: .5rem;
+            font-size: 1rem;
+            background:  rgb(220, 203, 203);
+            outline: none;
+            border: none;
+            border-radius: .3rem;
+        }
+        #submit {
+            margin-top: 3rem;
+            font-size: 1rem;
+            font-weight: 600;
+            width: 50%;
+            align-content: center;
+            color: #fff;
+            margin-left: 5rem;    
+            background: rgb(200, 111, 111);;
+            border: .2rem solid rgb(200, 111, 111);
+        }
+        #submit:hover{
+            border: .2rem solid rgb(200, 111, 111);;
+            background: #fff;
+            color: rgb(185, 82, 82);
+        }
+        .result{
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            text-align: center;
+            color:  rgb(185, 82, 82);;
+        }
+        @media (max-width: 480px){
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                width: 100%;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <h1>AGE CONVERTER</h1>
+            <p>Enter Day</p>
+            <input type="text" placeholder="Day" id="day">
+            <p>Enter Month</p>
+            <input type="text" placeholder="Month" id="month">
+            <p>Enter Year</p>  
+            <input type="text" placeholder="Year" id="year">
+            <input type="submit" value="Convert" id="submit">
+            <div class="result" id="result"></div>
+        </form>
+    </div>
+    <script src="project2.js"></script>
+</body>
+</html>
